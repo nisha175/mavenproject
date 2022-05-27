@@ -8,5 +8,5 @@ do
  echo "creating conatiner_$i"
  docker run -it -d --name container_$i testcontainerimg /bin/bash
  sleep 1;
- echo "container_$i created"
+ echo "container_$i created successfully"
 done
