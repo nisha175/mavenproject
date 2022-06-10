@@ -1,3 +1,3 @@
 FROM tomcat
-COPY target /usr/local/tomcat/webapp
-ENTRYPOINT /usr/local/tomcat/webapp/startup.sh && bash
+COPY target/test.war /usr/local/tomcat/webapps
+ENTRYPOINT /usr/local/tomcat/webapps/startup.sh && bash
