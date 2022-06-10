@@ -1,10 +1,9 @@
-#!/bin/bash
-#container_count=$1
+#! /bin/bash
 echo "container creation starts"
 
-for i in {1..5}
+for i in {1..2}
 do
  echo "creating container: $i"
- docker run -itd --name testcon_$i tomcatimg /bin/bash
+ docker run -it --name testcon_$i tomcatimg /bin/bash
  echo "created container: testcon_$i "
 done
